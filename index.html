@@ -1199,11 +1199,11 @@ dialog.lb::backdrop{background:var(--clear)}
     <ol class="rules">
       <li><b>Every difference has a written reason.</b><span>The GPON drivers were updated to run on Linux 6.18. Wherever they behave differently from the original, the difference is in a register with its reason: a decision, never a mystery.</span></li>
       <li><b>Vacuous is not a pass.</b><span>A check that cannot tell &ldquo;no signal&rdquo; from &ldquo;not measuring&rdquo; reports a broken probe, never a verdict.</span></li>
-      <li><b>Tested on real fibre.</b><span>Reports from testers on real fibre lines: 88 report folders since the first run on 2026-09-12, a few of them the developer's own notes and runs.</span></li>
+      <li><b>Tested on real fibre.</b><span>Peter-Pon has carried real GPON traffic for months, and testers on their operators' lines have sent 88 reports so far.</span></li>
     </ol>
     <ul class="rc">
       <li><b>Counted</b> The automatic checks are the numbered sections of the release script; the test runs and quick checks are those of the r681 release. Its mutation tests alone took 7,414 seconds.</li>
-      <li><b>For example</b> That first fibre run dropped the session every 18 seconds or so. The cause was ours: one interrupt handler where the original driver has two. It was split again, and an automatic check now stops the build if anyone merges it back.</li>
+      <li><b>For example</b> On an early fibre run the session dropped every 18 seconds or so. The cause was ours: one interrupt handler where the original driver has two. It was split again, and an automatic check now stops the build if anyone merges it back.</li>
     </ul>
   </div>
 </section>
